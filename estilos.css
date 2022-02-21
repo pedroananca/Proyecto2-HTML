@@ -1,0 +1,227 @@
+
+#container-header{
+ position:fixed;
+ height:50px;
+ z-index:3;
+}
+.container-header-list-int li a{
+ text-decoration: none;
+ color:white;
+}
+.container-header-list-int li{
+ display:inline;
+ top:20px;
+ padding:10px;
+}
+#container-header-list{
+ float:right;
+ position:relative;
+ bottom: 40px;
+}
+.container-header-list-int li a:hover{
+ color:aqua;
+ animation: botones 5s infinite;
+ border-radius: 5px;
+ padding:2px;
+}
+#containar-services{
+ display:block;
+ margin:auto; 
+
+}
+
+#container-imagen{
+position:relative;
+top:-60px;
+display:flex;
+
+
+}
+#carrusel-imagenes{
+ position:relative;
+ top:20px;
+ display:flex;
+}
+.imagen-contenedor{
+ text-align: center;
+
+}
+.imagen:hover{
+ box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.3);
+ cursor:pointer;
+
+
+}
+#nombre-imagen{
+ position:relative;
+ text-align:center;
+ right:500px; 
+ top:400px;
+ z-index:1;
+ color:white;
+}
+@keyframes botones{
+ from{box-shadow: 0px 0px 0px 0px rgba(255,255,255);}
+ 25%{box-shadow: 0px 0px 5px 4px rgba(255,255,255);}
+ 50%{box-shadow: 0px 0px 5px 2px rgba(255,255,255);}
+ 75%{box-shadow: 0px 0px 5px 4px rgba(255,255,255);}
+ to{box-shadow: 0px 0px 5px 2px rgba(255,255,255);}
+}
+
+#container-description{
+ position:relative; 
+ width:200px;
+ background-color: rgba(0,0,0,0.5);
+ color:white;
+ margin-left:20px;
+ right:420px;
+
+}
+
+#btn-video{
+ border-radius: 10px ;
+ position:relative;
+ float:right;
+ left:0px;
+ bottom:180px;
+ z-index: 2;
+
+}
+#description-banner{
+ position:relative;
+ background-color:rgba(0,0,0,0.5);
+ width:100%;
+ color:white;
+ bottom:180px;
+ padding:20px;
+ 
+}
+#animation-banner{
+position:absolute;
+bottom:300px;
+right:100px;
+color:white;
+
+}
+#phrase1{
+animation:titulo 5s infinite;
+
+}
+
+
+@keyframes titulo{
+  from{opacity:1}
+  25%{opacity:0}
+  50%{opacity:1}
+  75%{opacity:0}
+  to{opacity:1}
+
+}
+@keyframes titulo2{
+ from{opacity:1}
+ 25%{opacity:0}
+ 50%{opacity:1}
+ 75%{opacity:0}
+ to{opacity:1}
+
+}
+
+#next{
+ position:relative;
+ right:300px;
+
+}
+
+#btn-banner{
+border-radius: 10px;
+position:relative;
+left:80px;
+opacity:0.5;
+}
+#btn-banner:hover{
+ opacity:1;
+ 
+
+}
+#container-avion{
+position:relative;
+bottom: 150px;
+animation:flight 5s infinite;
+
+}
+#avion{
+float:right;
+}
+@keyframes flight{
+
+from{bottom:150px;}
+10%{right:100px;}
+20%{right:200px;}
+30%{right:300px;}
+40%{right:400px;}
+50%{right:500px}
+60%{right:600px}
+70%{right:700px}
+80%{right:800px}
+90%{right:900px}
+to{right:1000px;}
+}
+#btn-antes,#btn-despues{
+ height:40px;
+ border-radius: 20px;
+
+}
+#btn-antes{
+position:relative;
+right:1150px;
+top:250px;
+opacity:0.5;
+}
+#btn-despues{
+position:relative;
+right:400px;
+top:250px;
+opacity: 0.5;
+
+}
+#btn-antes:hover,#btn-despues:hover{
+opacity:1;
+}
+#description-imagen{
+ padding:10px;
+
+
+}
+#footer{
+position:fixed;
+top:100px;
+padding:20px;
+border:2px solid black;
+width:500px;
+display:none;
+right:400px;
+background-color: white;
+}
+
+.contenedorFormulario2{
+ position:fixed;
+ opacity:1;
+ display:none;
+ 
+}
+
+#save{
+ position:relative;
+ left:200px;
+ border-radius: 10px;
+
+}
+#btn-close{
+ position:relative;
+  border-radius: 50%;
+ background-color: red;
+ border:2px solid black;
+ left:450px;
+}
+
+

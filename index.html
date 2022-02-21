@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>TravelWorld</title>
+ <link rel="stylesheet" href="estilos.css">
+ <!--Plugin para numeros internacionales-->
+ <link
+ rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css
+ "
+/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+
+ <!--Script fontawesome-->
+ <script src="https://kit.fontawesome.com/fc1ac1be48.js" crossorigin="anonymous"></script>
+
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+ <header>
+  <div id="container-header" class="container-fluid bg-dark text-light">
+   <h1>TravelWorld</h1>
+   <nav id="container-header-list">
+    <ul class="container-header-list-int">
+     <li><a href="#contenedor-banner">Nosotros</a></li>
+     <li><a href="#container-avion">Servicios</a></li>
+     <li><a onclick="OpenModal()">Contáctanos</a></li>
+    </ul>
+   </nav>
+  </div>
+ </header>
+ <section id="contenedor-banner">
+   <video id="banner" autoplay muted loop src="videos/video.mp4" width ="100%"></video>
+  <button id="btn-video" onclick="dinamicVideo()"><i class="fa-solid fa-pause"></i></button>
+  <div id="description-banner">
+   <h1>Viaja con nosotros</h1>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias necessitatibus deserunt, eum alias hic aspernatur minima impedit fuga ex nisi odio illum reprehenderit quam laudantium? Corrupti expedita sunt inventore voluptatibus?</p></div>
+   <div id="animation-banner">
+    <h1 id="phrase1">!Ven y disfruta¡</h1>
+    <button id="btn-banner" onclick="travel()">Comienza tu viaje</button>
+   </div>
+ 
+
+  
+  </section>
+  <div id="container-avion">
+   <img id="avion" src="imagenes/avion.jpg" alt="avion" width="10%">
+   </div>
+  
+ <section>
+
+<div > 
+<div id="container-imagen" >
+ <img id="imagen-principal"src="Imagenes/Machu-Picchu.jpg" alt="Imagen" width="70%" >
+ <h2 id="nombre-imagen">Cusco</h2>
+ <div id = "container-description">
+ <p id="description-imagen">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident optio aut nulla. Beatae quo saepe cupiditate aperiam, accusantium alias nemo aliquam facere? Consequuntur commodi, deleniti possimus ipsum magni officia odio!</p>
+</div>
+<button id="btn-antes" onclick="btnprevious()"><i class="fa-solid fa-angle-left"></i></button>
+<button id="btn-despues"  onclick="btnnext()"><i class="fa-solid fa-angle-right"></i></button>
+</div>
+
+</div>
+
+<div id="carrusel-imagenes">
+ <div class="imagen-contenedor" >
+ <img id ="img1"class="imagen"src="Imagenes/Machu-Picchu.jpg" alt="Cusco" width="80%"onclick="mostrarimagen(this)"></div>
+ <div class="imagen-contenedor">
+ <img id ="img2" class="imagen"src="Imagenes/Paris.jpg" alt="Paris" width="80%" onclick="mostrarimagen(this)" ></div>
+ <div class="imagen-contenedor">
+ <img id ="img3" class="imagen"src="Imagenes/Petra.jpg" alt="Petra" width="80%" onclick="mostrarimagen(this)"></div>
+ <div class="imagen-contenedor">
+ <img id ="img4" class="imagen"src="Imagenes/Polinesia-francesa.jpg" alt="Polinesia francesa" width="80%" onclick="mostrarimagen(this)"></div>
+</div>
+
+ </section>
+ <footer  id="footer"class="contenedorFormulario">
+  <button id="btn-close" onclick="CloseModal()"><i class="fa-solid fa-xmark"></i></button>
+
+<form id="formulario"method = "get" action ="">
+  <h1>Contáctanos</h1>
+ <label for = "name">Nombres: </label>
+ <input id="name" type="text" placeholder="Nombres completos" value="" size="50" required><br><br>
+ <label for = "lastname">Apellidos: </label>
+ <input id="lastname" type="text" placeholder="Apellidos completos" value="" size="50" required> <br><br>
+ <label for = "birthday">Fecha.Na: </label>
+ <input id="birthday" type="date"  value="" required><br><br>
+ <label>Elija género: </label>
+ <input id="genre1" type="radio" name ="genre" checked>
+<label for ="genre1">Masculino</label>
+<input id="genre2" type="radio" name ="genre">
+<label for ="genre2">Femenino</label><br><br>
+<label for ="numero">Número: </label>
+<input type="tel" id="numero" value="" required>
+</form>
+
+<button id="save" onclick="SaveInformation() ,clean()">Enviar</button>
+
+ </footer>
+<script src="script.js" ></script> 
+<script src="script2.js" type="text/babel"> </script> 
+<script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+</body>
+</html>
